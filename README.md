@@ -1,6 +1,6 @@
 # O2-Sec
 ## This is a PowerShell script to automate the creation of a VM with VMware Workstation Pro.
-#### - First you need to create a Template
+#### - First you need to create a Template or use the .vmx file on this repo as a template
 #### - Then supply the .vmx template to the PowerShell script
 #### - Finally run the script
 
@@ -18,4 +18,8 @@
 #### - Make sure to supply the .vmx path of the template and adjust the path of the new VM as you wish
 #### - Run the script (Can be run without Administrator privilege)
 #### - Revert the change made in the PowerShell by running "Set-ExecutionPolicy Restricted" as admin and confirm Y
+
+## Inside the VM
+#### - Login with password: 1234
+#### - Run the following command as sudo to enable the shared folder "sudo vmhgfs-fuse .host:/shared /mnt/hgfs/shared -o allow_other -o uid=1000"
 
